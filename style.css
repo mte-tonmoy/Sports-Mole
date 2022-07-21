@@ -1,0 +1,204 @@
+/* ------------
+goole font link
+-------------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+
+  /* overflow-x: hidden; */
+}
+/* ----------
+Header Start 
+------------*/
+.header {
+  display: flex;
+  margin: 50px;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #161616;
+}
+.greding {
+  color: white;
+  padding: 50px 50px 0 50px;
+  font-size: 2rem;
+  font-weight: 800px;
+  border-radius: 20px;
+}
+
+.greding p {
+  font-size: 15px;
+}
+.greding img {
+  height: 100%;
+  width: 100%;
+}
+.greding button {
+  background-color: #dd0000;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.view button {
+  background-color: #dd0000;
+  padding: 16px 25px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  width: 150px;
+  margin: 10px 50px;
+  margin-bottom: 30px;
+}
+.view button {
+  visibility: hidden;
+}
+/* ----------
+Main Start 
+------------*/
+.events {
+  display: flex;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  background-color: #161616;
+  border-radius: 10px;
+  height: 300px;
+  width: 350px;
+  justify-content: center;
+  margin: 30px 120px;
+}
+.button {
+  text-decoration: none;
+  font-size: 15px;
+  text-align: center;
+  margin: 20px;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: black;
+}
+#select {
+  background-color: #dd0000;
+  color: white;
+}
+.match {
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 5px 5px 5px 5px whitesmoke;
+  border-color: grey;
+}
+.match p {
+  padding: 20px;
+}
+.match button {
+  margin: 0px 20px;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.time {
+  margin-left: 10px;
+}
+.mess {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+/* ----------
+Footer Start 
+------------*/
+footer {
+  text-align: center;
+  justify-content: center;
+  background-color: #161616;
+  height: 300px;
+  width: 100%;
+  color: #ffffff;
+}
+footer h1 {
+  font-size: 40px;
+  padding: 30px;
+}
+.footer-link {
+  text-decoration: none;
+  color: white;
+  padding: 0 20px;
+  font-weight: 500px;
+}
+hr {
+  margin: 20px 100px;
+  border: 0.1px solid gray;
+}
+.fa-brands {
+  color: crimson;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 5px;
+}
+/* -------------------
+Upcomming Match button
+---------------------- */
+
+.flag {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  margin-bottom: 300px;
+}
+.flag img {
+  border-radius: 10px;
+}
+.match span {
+  padding: 10px;
+}
+.match p {
+  margin: auto;
+}
+/* -------------------
+Responsive for mobile
+---------------------- */
+@media screen and(min-width: 576px) {
+  .view button {
+    visibility: hidden;
+  }
+  .header {
+    display: inline;
+  }
+  .events {
+    display: inline;
+  }
+  .info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 10px;
+  }
+}
+
+/* -------------------
+Responsive for tablet
+---------------------- */
+@media screen and (max-width: 768px) {
+  .view button {
+    visibility: visible;
+  }
+  .events {
+    display: inline;
+  }
+  .info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+  }
+}
